@@ -38,6 +38,10 @@ public class ReverseElement {
 		Collections.reverse(list);
 		
 		System.out.println("Reversed array: " + Arrays.toString(arr));
+		
+		for(int i= numArray.length-1; i>=0; i--) {
+			System.out.println(numArray[i]);
+		}
 	}
 
 }

@@ -23,9 +23,15 @@ class WhatsAppV3 extends WhatsAppV2{
 public class MethodOverriding {
 
 	public static void main(String[] args) {
-		WhatsAppV3 app = new WhatsAppV3();
-		app.sendMessage();
+		
+		WhatsAppV2 appV2 = new WhatsAppV2();
+		appV2.sendMessage();
+		
+		WhatsAppV3 appV3 = new WhatsAppV3();
+		appV3.sendMessage();
 
+		WhatsAppV2 appV23 = new WhatsAppV3();
+		appV23.sendMessage();				// Method overriding
 	}
 
 }

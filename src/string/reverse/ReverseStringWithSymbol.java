@@ -15,7 +15,23 @@ public class ReverseStringWithSymbol {
 		
 		System.out.println(resStr);
 		
+		resStr = "";
+		for(int i =inputStr.length()-1; i>=0; i--) {
+			char c = inputStr.charAt(i);
+			if(Character.isLetter(c)) {
+				resStr += c;
+			}
+		}
+		System.out.println(resStr);
 		
+		resStr = "";
+		char[] ch = inputStr.toCharArray();
+		for(int i=ch.length-1; i>=0; i--) {
+			if(Character.isLetter(ch[i])) {
+				resStr += ch[i];
+			}
+		}
+		System.out.println(resStr);
 	}
 
 }

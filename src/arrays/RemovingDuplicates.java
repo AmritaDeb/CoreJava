@@ -1,5 +1,12 @@
 package arrays;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class RemovingDuplicates {
 
 	public static void main(String[] args) {
@@ -28,6 +35,13 @@ public class RemovingDuplicates {
 		for (int k = 0; k < index; k++) {
 			System.out.println(temp[k]);
 		}
+		Integer[] numArr = {1, 2, 3, 2, 4, 1, 5};
+		List list = Arrays.asList(numArr);
+		System.out.println(list);
+		Collections.sort(list);
+		Set set = new HashSet(list);
+		System.out.println(set);
+		
 	}
 
 }

@@ -17,8 +17,8 @@ public class LinkedHashSetTest1 {
 		LinkedHashSet<String> set = new LinkedHashSet<>();
 
         set.add("Apple");
-        set.add("Banana");
         set.add("Orange");
+        set.add("Banana");
         set.add("Apple"); // duplicate ignored
 
         System.out.println(set); // [Apple, Banana, Orange] (insertion order preserved)
